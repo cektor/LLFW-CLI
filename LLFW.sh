@@ -35,6 +35,7 @@ declare -A tr_TR=(
     ["format_complete"]="Biçimlendirme tamamlandı!"
     ["partition_error"]="Bölüm oluşturma hatası!"
     ["format_error"]="Biçimlendirme hatası!"
+    ["exit_message"]="İşlem iptal edildi. Çıkılıyor..."
 )
 
 # Root kontrolü
@@ -93,13 +94,15 @@ select_filesystem() {
     echo "2) exFAT"
     echo "3) NTFS"
     echo "4) ext4"
-    read -p "$(echo -e ${YELLOW}"Seçim (1-4): "${NC})" fs_choice
+    echo "5) Çıkış Yap"
+    read -p "$(echo -e ${YELLOW}"Seçim (1-5): "${NC})" fs_choice
 
     case $fs_choice in
         1) FILESYSTEM="vfat" ;;
         2) FILESYSTEM="exfat" ;;
         3) FILESYSTEM="ntfs" ;;
         4) FILESYSTEM="ext4" ;;
+        5) echo -e "${RED}${tr_TR["exit_message"]}${NC}" && exit 0 ;;
         *) FILESYSTEM="vfat" ;;
     esac
 }
