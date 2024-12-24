@@ -10,7 +10,7 @@ LLFW (Low-Level Formatter Wizard) is a command line tool that facilitates low-le
 This permanently erases all data on your disk and makes it unrecoverable. So Make Sure You Choose the Right Disk!
 
 # LLFW Linux Screenshot
-![gimp](llfw-cli.png)  
+![gimp](llfw-cliV2.png)  
 ----------------------------------
 
 # Usage:
