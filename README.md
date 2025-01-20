@@ -6,6 +6,9 @@
 # LLFW-CLI
 LLFW (Low-Level Formatter Wizard) is a command line tool that facilitates low-level formatting operations for disks. It supports disk selection, data sanitization methods (zero fill, random data, secure erase) and FAT32, exFAT, NTFS, ext4 formatting. It requires root privileges and warns that all data will be deleted.
 
+NOTE: LLFW GUI Graphical Visual User Interface Version Available: https://github.com/cektor/LLFW/
+
+
 # Danger
 This permanently erases all data on your disk and makes it unrecoverable. So Make Sure You Choose the Right Disk!
 
