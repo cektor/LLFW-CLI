@@ -37,8 +37,7 @@ sudo apt install git  -y
 ----------------------------------
 
 # Compile
-Install Resynthesizer-LiquidRescale-GIMP-Plugin
-
+ 
 ```bash
 sudo git clone https://github.com/cektor/LLFW-CLI.git
 ```
